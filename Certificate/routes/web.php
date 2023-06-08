@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FormPageController;
+use Faker\Guesser\Name;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[FormPageController::class, 'index']);
+Route::get('/',[FormPageController::class, 'index'])->name('form.page');
